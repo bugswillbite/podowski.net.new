@@ -1,0 +1,457 @@
+body{
+    background:white;
+    color:black;
+    font-family:"Space Grotesk",sans-serif;
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.page-hero{
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8vw;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.page-hero h1{
+    font-size:clamp(4rem,10vw,10rem);
+    line-height:.9;
+    margin:0;
+}
+
+.page-hero p{
+    margin-top:2rem;
+    max-width:600px;
+}
+
+/* FEATURED */
+
+.featured-section{
+    padding:8rem 8vw;
+}
+
+.featured-section h2{
+    font-size:3rem;
+    margin-bottom:3rem;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:3rem;
+}
+
+.featured-grid2{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:3rem;
+}
+
+.featured-grid3{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:3rem;
+}
+
+
+.featured-project{
+    text-decoration:none;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.featured-project img{
+    width:100%;
+    max-width:400px;
+    aspect-ratio:16/20;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+}
+
+.featured-project2{
+    text-decoration:none;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.featured-project2 img{
+    width:100%;
+    max-width:400px;
+    aspect-ratio:16/16;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+}
+
+.featured-project3{
+    text-decoration:none;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.featured-project3 img{
+    width:100%;
+    max-width:400px;
+    aspect-ratio:18/20;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+}
+
+.featured-info{
+    padding-top:1rem;
+}
+
+.featured-info h3{
+    font-size:2rem;
+    margin:.25rem 0;
+}
+
+/* ARCHIVE */
+
+.archive-section{
+    padding:8rem 8vw;
+}
+
+.archive-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:4rem;
+}
+
+.archive-header h2{
+    font-size:3rem;
+    margin:0;
+}
+
+.controls select{
+    padding:.75rem 1rem;
+    font-size:1rem;
+}
+
+/* PROJECT GRID */
+
+.poster-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(5,minmax(0,1fr));
+
+    gap:3rem;
+
+    align-items:start;
+}
+
+.poster{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-decoration:none;
+    color:black;
+}
+
+.poster img{
+
+    width:100%;
+    max-width:250px;
+
+    aspect-ratio:16/20;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+.poster:hover img{
+
+    transform:translateY(-8px);
+}
+
+.poster h3{
+
+    margin-top:.75rem;
+    margin-bottom:.25rem;
+
+    text-align:center;
+
+    font-size:1rem;
+    line-height:1.2;
+}
+
+.poster span{
+
+    text-align:center;
+
+    font-size:.85rem;
+    opacity:.65;
+}
+
+#sort{
+
+    border:none;
+
+    border-bottom:1px solid black;
+
+    background:transparent;
+
+    padding:
+        .5rem 2rem
+        .5rem 0;
+
+    font-size:1rem;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:2rem;
+}
+
+.video-card{
+
+    cursor:pointer;
+}
+
+.video-card img{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.3s;
+}
+
+.video-card:hover img{
+
+    transform:translateY(-8px);
+}
+
+.video-card h3{
+
+    margin-top:1rem;
+}
+
+.video-lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:5000;
+}
+
+.video-lightbox.active{
+
+    display:flex;
+}
+
+.video-lightbox video{
+
+    width:90vw;
+
+    max-height:90vh;
+}
+
+.video-close{
+
+    position:absolute;
+
+    top:2rem;
+
+    right:2rem;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:3rem;
+
+    cursor:pointer;
+}
+
+/* NAV */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:1.5rem 5vw;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+}
+
+.logo,
+.logo:visited,
+.logo:hover,
+.logo:active{
+    color:#000;
+    text-decoration:none;
+
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:.2em;
+}
+
+nav{
+    display:flex;
+    gap:2rem;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active{
+    color:#000;
+    text-decoration:none;
+    font-weight:500;
+    transition:opacity .2s ease;
+}
+
+nav a:hover,
+nav a:focus{
+    opacity:.6;
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+
+    .featured-grid, .featured-grid2, .featured-grid3{
+
+        grid-template-columns:1fr;
+    }
+
+    .poster-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:2rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .page-hero{
+
+        min-height:60vh;
+        padding:0 6vw;
+    }
+
+    .page-hero h1{
+
+        font-size:clamp(
+            3rem,
+            12vw,
+            5rem
+        );
+    }
+
+    .featured-section,
+    .archive-section{
+
+        padding:4rem 6vw;
+    }
+
+    .archive-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:1rem;
+    }
+
+    .poster-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:1.5rem;
+    }
+
+    .poster img{
+
+        max-width:155px;
+    }
+
+    .poster h3{
+
+        font-size:.85rem;
+    }
+
+    .poster span{
+
+        font-size:.75rem;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+        gap:1rem;
+    }
+
+    .video-card h3{
+        font-size:1rem;
+    }
+
+}
+

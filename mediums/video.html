@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Video</title>
+
+<link rel="stylesheet" href="../css/medium.css">
+<link rel="stylesheet" href="../css/style.css">
+<script defer src="../js/video.js"></script>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="../index.html" class="logo">
+        IZABELLA PODOWSKI
+    </a>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#archive">Projects</a>
+    </nav>
+
+</header>
+
+<section class="page-hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+
+        <h1>VIDEO & MOTION</h1>
+
+        <p>
+            Video editing, music videos,
+            motion graphics, visual storytelling,
+            promotional content, experimental film,
+            and multimedia production.
+        </p>
+
+    </div>
+
+</section>
+
+<section
+id="featured"
+class="featured-section">
+
+    <h2>FEATURED VIDEO TYPES</h2>
+
+    <div class="featured-grid2">
+
+        <a
+        href="../projects/video/musicvideos.html"
+        class="featured-project2">
+
+            <img
+            src="../images/video/music_videos.png"
+            alt="The Prophitt">
+
+            <div class="featured-info">
+
+                <h3>
+                    Music Videos
+                </h3>
+
+            </div>
+
+        </a>
+
+        <a
+        href="../projects/video/appropriation.html"
+        class="featured-project2">
+
+            <img
+            src="../images/video/appropriation.png"
+            alt="Music Videos">
+
+            <div class="featured-info">
+
+                <h3>
+                    Appropriation Videos
+                </h3>
+
+            </div>
+
+        </a>
+
+        <a
+        href="../projects/video/experimental.html"
+        class="featured-project2">
+
+            <img
+            src="../images/video/experimental.png"
+            alt="Experimental Film">
+
+            <div class="featured-info">
+
+                <h3>
+                    Experimental Film
+                </h3>
+
+            </div>
+
+        </a>
+
+        <a
+        href="../projects/video/glitch.html"
+        class="featured-project2">
+
+            <img
+            src="../images/video/carousel1_glitch.png"
+            alt="Glitch Art/Short-Form">
+
+            <div class="featured-info">
+
+                <h3>
+                    Glitch Art & Short-Form
+                </h3>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section
+id="archive"
+class="archive-section">
+
+    <div class="archive-header">
+
+        <h2>ALL VIDEOS</h2>
+
+        <div class="controls">
+
+            <select id="sort">
+
+                <option value="custom">
+                    Relevance
+                </option>
+
+                <option value="newest">
+                    Newest First
+                </option>
+
+                <option value="oldest">
+                    Oldest First
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <div
+    id="videoGrid"
+    class="video-grid">
+
+        <!-- WISH I HAD 2 MORE WISHES -->
+
+        <div
+        class="video-card"
+        data-year="2025"
+        data-order="1"
+        data-video="../video/prophitt/wishi.mp4">
+
+            <img
+            src="../images/webdesign/prophitt/thumb1.png"
+            alt="Video 1">
+
+            <h3>I Wish I Had 2 More Wishes</h3>
+
+            <span>2025</span>
+
+        </div>
+
+        <!-- TRY 2 -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="2"
+        data-video="../video/prophitt/try2.mp4">
+
+            <img
+            src="../images/webdesign/prophitt/thumb2.png"
+            alt="Video 2">
+
+            <h3>Try 2</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- SICKLY -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="3"
+        data-video="../video/prophitt/sickly.mp4">
+
+            <img
+            src="../images/webdesign/prophitt/thumb3.png"
+            alt="Video 3">
+
+            <h3>A Sickly Laugh From Gaia</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- OPERELLY -->
+
+        <div
+        class="video-card"
+        data-year="2024"
+        data-order="4"
+        data-video="../video/musicvideo/operelly.mp4">
+
+            <img
+            src="../images/video/operelly_thumb.png"
+            alt="Video 3">
+
+            <h3>Crying is the Only</h3>
+
+            <span>2024</span>
+
+        </div>
+
+        <!-- JBOT SOCAL -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="5"
+        data-video="../video/experimental/jbot_2023.mp4">
+
+            <img
+            src="../images/video/jbot_thumb.png"
+            alt="Video 3">
+
+            <h3>jbot socal</h3>
+
+            <span>2023</span>
+
+        </div>
+
+    <!-- DRIVING WITH MARYJANE -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="6"
+        data-video="../video/experimental/mj_2023.mov">
+
+            <img
+            src="../images/video/mj_thumb.png"
+            alt="Video 3">
+
+            <h3>Driving With MaryJane</h3>
+
+            <span>2023</span>
+
+        </div>
+
+    <!-- BLIP -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="7"
+        data-video="../video/experimental/blip_2023.mp4">
+
+            <img
+            src="../images/video/blip_thumb.png"
+            alt="Video 3">
+
+            <h3>Blip</h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- CYBER WORSHIP -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="8"
+        data-video="../video/experimental/cyber_2022.mp4">
+
+            <img
+            src="../images/video/cyber_thumb.png"
+            alt="Video 3">
+
+            <h3>Cyber Worship Reality</h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- DON'T BE A BODY -->
+
+        <div
+        class="video-card"
+        data-year="2021"
+        data-order="9"
+        data-video="../video/experimental/body_2021.mp4">
+
+            <img
+            src="../images/video/body_thumb.png"
+            alt="Video 3">
+
+            <h3>Don't Be A Body</h3>
+
+            <span>2021</span>
+
+        </div>
+
+        <!-- TRINKETS -->
+
+        <div
+        class="video-card"
+        data-year="2024"
+        data-order="10"
+        data-video="../video/experimental/trinket_2024.mp4">
+
+            <img
+            src="../images/video/trinket_thumb.png"
+            alt="Video 3">
+
+            <h3>Trinkets</h3>
+
+            <span>2024</span>
+
+        </div>
+
+        <!-- TAKEZO -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="11"
+        data-video="../video/prophitt/takezo.mp4">
+
+            <img
+            src="../images/webdesign/prophitt/thumb4.png"
+            alt="Video 3">
+
+            <h3>Takezo and the Dueling Tree</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- TELL ME A LITTLE BIT ABOUT YOU -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="12"
+        data-video="../video/prophitt/tellme_2026.mp4">
+
+            <img
+            src="../images/video/tellme_thumb.png"
+            alt="Video 3">
+
+            <h3>Tell Me a Little Bit About You</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- LIGHTS OUT -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="13"
+        data-video="../video/experimental/lights_2022.mp4">
+
+            <img
+            src="../images/video/lights_thumb.png"
+            alt="Video 3">
+
+            <h3>Lights Out</h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- UNPACKING -->
+
+        <div
+        class="video-card"
+        data-year="2024"
+        data-order="14"
+        data-video="../video/experimental/unpack_2024.mp4">
+
+            <img
+            src="../images/video/unpack_thumb.png"
+            alt="Video 3">
+
+            <h3>Unpacking</h3>
+
+            <span>2024</span>
+
+        </div>
+
+        <!-- MOONSTRUCK -->
+
+        <div
+        class="video-card"
+        data-year="2024"
+        data-order="15"
+        data-video="../video/experimental/moon_2024.mp4">
+
+            <img
+            src="../images/video/moon_thumb.png"
+            alt="Video 3">
+
+            <h3>Moonstruck</h3>
+
+            <span>2024</span>
+
+        </div>
+
+        <!-- RIOS/GODSPEED -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="16"
+        data-video="../video/prophitt/godspeed_2026.mp4">
+
+            <img
+            src="../images/video/rios_thumb.png"
+            alt="Video 3">
+
+            <h3>Rio's [Godspeed You Reckless Warrior]</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- BEING ENOUGH -->
+
+        <div
+        class="video-card"
+        data-year="2026"
+        data-order="17"
+        data-video="../video/prophitt/being_enough_2026.mp4">
+
+            <img
+            src="../images/video/being_enough_thumb.png"
+            alt="Video 3">
+
+            <h3>being enough.jpg</h3>
+
+            <span>2026</span>
+
+        </div>
+
+        <!-- WHATEVER MIND -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="18"
+        data-video="../video/experimental/whatever_mind_2023.mp4">
+
+            <img
+            src="../images/video/whatever_thumb.png"
+            alt="Video 3">
+
+            <h3>whatever mind</h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- WORMS -->
+
+        <div
+        class="video-card"
+        data-year="2021"
+        data-order="19"
+        data-video="../video/experimental/worms_2021.mp4">
+
+            <img
+            src="../images/video/worms_thumb.png"
+            alt="Video 3">
+
+            <h3>WORMS!</h3>
+
+            <span>2021</span>
+
+        </div>
+
+        <!-- LOST THREADS -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="20"
+        data-video="../video/experimental/lost_threads_2022.mp4">
+
+            <img
+            src="../images/video/lost_thumb.png"
+            alt="Video 3">
+
+            <h3>Lost Threads</h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- ARNOLD DOC -->
+
+        <div
+        class="video-card"
+        data-year="2019"
+        data-order="21"
+        data-video="../video/experimental/arnold_2019.mp4">
+
+            <img
+            src="../images/video/arnold_thumb.png"
+            alt="Video 3">
+
+            <h3>Arnold Schwarzenegger Impressions Documentary</h3>
+
+            <span>2019</span>
+
+        </div>
+
+        <!-- LES FUSEES -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="22"
+        data-video="../video/experimental/SANDIN_2022.mp4">
+
+            <img
+            src="../images/video/FUSEES_thumb.png"
+            alt="Video 3">
+
+            <h3>Les Fusées</h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- PIPES OBSERVATION -->
+
+        <div
+        class="video-card"
+        data-year="2021"
+        data-order="23"
+        data-video="../video/experimental/pipes_2021.mp4">
+
+            <img
+            src="../images/video/pipes_thumb.png"
+            alt="Video 3">
+
+            <h3>Pipes Observation</h3>
+
+            <span>2021</span>
+
+        </div>
+
+        <!-- FOOT DRAMA -->
+
+        <div
+        class="video-card"
+        data-year="2021"
+        data-order="24"
+        data-video="../video/experimental/foot_drama_2021.mp4">
+
+            <img
+            src="../images/video/foot_thumb.png"
+            alt="Video 3">
+
+            <h3>Foot Drama</h3>
+
+            <span>2021</span>
+
+        </div>
+
+        <!-- FILM PROJECT -->
+
+        <div
+        class="video-card"
+        data-year="2024"
+        data-order="25"
+        data-video="../video/experimental/film_proj_2024.mp4">
+
+            <img
+            src="../images/video/film_thumb.png"
+            alt="Video 3">
+
+            <h3>my film project is...</h3>
+
+            <span>2024</span>
+
+        </div>
+
+        <!-- GET LONELY?  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="26"
+        data-video="../video/experimental/desktop_2023.mp4">
+
+            <img
+            src="../images/video/desktop_thumb.png"
+            alt="Video 3">
+
+            <h3>Get Lonely? (Desktop Performance)</h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- BRIEF DEMO  -->
+
+        <div
+        class="video-card"
+        data-year="2019"
+        data-order="27"
+        data-video="../video/experimental/brief_demo_2019.mp4">
+
+            <img
+            src="../images/video/brief_thumb.png"
+            alt="Video 3">
+
+            <h3> A brief demonstration of my day to day life </h3>
+
+            <span>2019</span>
+
+        </div>
+
+        <!-- BREAK-UP  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="28"
+        data-video="../video/experimental/break-up.mp4">
+
+            <img
+            src="../images/video/break_thumb.png"
+            alt="Video 3">
+
+            <h3> break-up </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- UNREAL LANDSCAPES  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="29"
+        data-video="../video/glitch/unreal_landscapes.mp4">
+
+            <img
+            src="../images/video/unreal.png"
+            alt="Video 3">
+
+            <h3> Unreal Landscapes </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- KALEIDACAM  -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="30"
+        data-video="../video/glitch/Kaleidacam-Zebra.mp4">
+
+            <img
+            src="../images/video/zebra.png"
+            alt="Video 3">
+
+            <h3> Kaleidacam - Zebra </h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- 2:44AM  -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="31"
+        data-video="../video/glitch/244_2022.mp4">
+
+            <img
+            src="../images/video/244_2022.jpg"
+            alt="Video 3">
+
+            <h3> 2:44 AM </h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- HIGHER STATE OF CONSCIOUSNESS  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="32"
+        data-video="../video/glitch/higher.mp4">
+
+            <img
+            src="../images/video/higher_thumb.png"
+            alt="Video 3">
+
+            <h3> higher state of consciousness </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- TELEPORTATION  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="33"
+        data-video="../video/experimental/teleportation_2023.mp4">
+
+            <img
+            src="../images/video/teleportation.png"
+            alt="Video 3">
+
+            <h3> teleportation </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- ECSTATIC  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="34"
+        data-video="../video/experimental/ecstatic.mp4">
+
+            <img
+            src="../images/video/ecstatic_thumb.png"
+            alt="Video 3">
+
+            <h3> Ecstatic </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- PHOTOMOSH  -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="35"
+        data-video="../video/experimental/photomsh_2022.mp4">
+
+            <img
+            src="../images/video/photomosh_thumb.png"
+            alt="Video 3">
+
+            <h3> PHOTOMOSH </h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- ALIEN TRANSMISSION  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="36"
+        data-video="../video/glitch/alien_transmission.mp4">
+
+            <img
+            src="../images/video/alien_thumb.png"
+            alt="Video 3">
+
+            <h3> Alien Transmission </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- GORB  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="37"
+        data-video="../video/glitch/playg0rb0nline.mp4">
+
+            <img
+            src="../images/video/gorb_thumb.png"
+            alt="Video 3">
+
+            <h3> playg0rb0nline </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- COLOR ME FUCKED UP  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="38"
+        data-video="../video/glitch/color_me.mp4">
+
+            <img
+            src="../images/video/color_me.png"
+            alt="Video 3">
+
+            <h3> Color Me Fucked Up </h3>
+
+            <span>2023</span>
+
+        </div>
+
+        <!-- FLUID FRIENDS  -->
+
+        <div
+        class="video-card"
+        data-year="2022"
+        data-order="39"
+        data-video="../video/glitch/fluid_friends_2022.mp4">
+
+            <img
+            src="../images/video/fluid_friends.jpg"
+            alt="Video 3">
+
+            <h3> Fluid Friends </h3>
+
+            <span>2022</span>
+
+        </div>
+
+        <!-- FLOATING  -->
+
+        <div
+        class="video-card"
+        data-year="2023"
+        data-order="40"
+        data-video="../video/glitch/floating.mp4">
+
+            <img
+            src="../images/video/floating.png"
+            alt="Video 3">
+
+            <h3> Floating </h3>
+
+            <span>2023</span>
+
+        </div>
+
+
+    </div>
+    
+
+</section>
+
+<div
+id="videoLightbox"
+class="video-lightbox">
+
+    <button
+    class="video-close">
+
+        ×
+
+    </button>
+
+    <video
+    id="fullscreenVideo"
+    controls>
+
+    </video>
+
+</div>
+
+</body>
+</html>
