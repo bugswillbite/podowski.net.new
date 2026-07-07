@@ -272,7 +272,7 @@ document.querySelector(
 
 const galleryItems =
 document.querySelectorAll(
-    ".gallery-item"
+    ".gallery-item, .gallery-item3"
 );
 
 const albumImages =
@@ -724,7 +724,10 @@ if (galleryItems2.length > 0) {
 const galleryItems3 =
 document.querySelectorAll(".gallery-item3");
 
-if (galleryItems3.length > 0) {
+if (
+    galleryItems3.length > 0 &&
+    document.querySelectorAll(".gallery-item").length === 0
+) {
 
     let currentGallery3Index = 0;
 
