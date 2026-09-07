@@ -54,6 +54,14 @@ const projects = {
 
     ],
 
+    soundsource: [
+
+        img("graphicdesign/soundsource/carousel1.png"),
+        img("graphicdesign/soundsource/carousel2.png"),
+        img("graphicdesign/soundsource/carousel3.png")
+
+    ],
+
     appropriation: [
 
         img("video/carousel1_app.png"),
