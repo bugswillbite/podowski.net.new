@@ -54,6 +54,14 @@ const projects = {
 
     ],
 
+    allaround: [
+
+        img("webdesign/allaround/carousel1.png"),
+        img("webdesign/allaround/carousel2.png"),
+        img("webdesign/allaround/carousel3.png")
+
+    ],
+
     soundsource: [
 
         img("graphicdesign/soundsource/carousel1.png"),
