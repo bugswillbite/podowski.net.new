@@ -825,6 +825,28 @@
     object-fit:cover;
 }
 
+.video-stack{
+
+    display:grid;
+
+    gap:2rem;
+
+    width:100%;
+
+    max-width:500px;
+}
+
+.image-stack{
+
+    display:grid;
+
+    gap:2rem;
+
+    width:100%;
+
+    max-width:500px;
+}
+
 .video-copy{
 
     display:flex;
